@@ -1,5 +1,6 @@
 import java.util.Set;
 import java.util.HashSet;
+import java.util.Arrays;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<Integer>();
@@ -12,6 +13,8 @@ class Solution {
     }
     
     public boolean mySolution(int[] nums) {
+        Set<Integer> set = new HashSet<Integer>();
+
         for (int i = 0; i < nums.length; i++) {
             if (set.contains(nums[i]))
                 return true;
